@@ -3,13 +3,24 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.max-width{
+  width: 1536px;
+  margin: 0 auto;
+  padding: 85px;
+}
+
+
+
 .header-container{
-  width: 1280px;
+   width: 1536px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
+}
+.logo{
+  height: 56px;
 }
 .navItems a.router-link{
   text-decoration: none;
@@ -17,7 +28,7 @@
 .navItems{
   display: flex;
   gap: 25px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .navItems a {
   text-decoration: none;
@@ -31,41 +42,135 @@
   padding: 10px;
   border-radius: 5px;
 }
-h2{
-  font-size: 28px;  
+.navItems a:hover{
+ background-color:#FFB8F8 ;
+ border-radius: 5px;
 }
-h1{
-  font-size: 44px;
-  color: #F407C2;  
-}
-p{
-  font-size: 18px;
-  margin-top: 15px;
-}
-.flex{
-  display: flex;
-  gap: 10px;
-}
-button{
+.bgnavitems{
   padding: 10px;
-  border-radius: 5px;
-  border: none;
-  margin-top: 20px;
-  color: #fff;
-  background-color: #FF0082;
-  font-size: 18px;
 }
-/* Home */
+.bgnavitems a{
+  background-color: #FF0082;
+  margin-left: 15px;
+  color: #fff;
+  border-radius: 5px;
 
+}
+
+/* Hero */
+
+.section{
+  background-color:#FFEEFD ;
+}
 .home {
-  width: 1280px;
-  height: 80vh;
+  width: 1536px;
+  padding-left: 25px; 
   margin: 0 auto;  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px; 
   justify-content: center;
   align-items: center;
+}
+.hero{
+  width: 800px;
+  height: 800px;
+}
+.subheading{
+  font-size: 28px;  
+}
+.mainHeading{
+  font-size: 44px;
+  color: #FD04B1;  
+}
+.paragraph{
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 20px;
+  color:#333 ;
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+.borderedbtn{
+  background-color: #FFEEFD;
+  color:#FD04B1;
+  border: #FD04B1 solid 1px;
+}
+button{
+  padding: 18px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 35px;
+  color: #fff;
+  background-color: #FF0082;
+  font-size: 18px;
+}
+
+.herolist{
+  margin-top: 35px;
+  list-style:circle;
+  padding-left: 25px;
+}
+.list{
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Section1 */
+
+.badgescontainer{
+  display: grid;
+  padding: 85px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; 
+  justify-content: center;
+  align-items: center; 
+}
+.logos img{
+  margin-right: 20px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+/* fleet  */
+
+.carslist{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  text-align: center;
+  margin-top: 35px;
+}
+.box{
+  background-color: #fff;
+  padding: 35px;
+  border: #FD04B1 solid 1px;
+  border-radius: 20px;
+}
+.box img{
+  margin-top: 15px;
+}
+.box h2{
+  margin-bottom: 10px;
+}
+.box:hover{
+  background-color: #FD04B1;
+  color: #fff;
+}
+
+
+/* 2 */
+
+.gridcontainer{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr) ;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* Footer Styles */
