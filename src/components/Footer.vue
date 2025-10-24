@@ -56,6 +56,6 @@ const areas = [
   'Alderley Edge',
   'Alderley Edge',
   'Alderley Edge',
-  'Alderley Edge's
+  'Alderley Edge'
 ]
 </script>
