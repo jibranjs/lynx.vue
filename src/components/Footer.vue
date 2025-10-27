@@ -46,7 +46,20 @@
             </div>
  
           </div>
-        </div>s
+        </div>
+        <hr class="border-white pt-8">
+        <div class="flex justify-between px-6 items-center">
+          <div>
+            <p class="text-white hover:text-[#FD04B1]">Copyright © 2025 Lynx Taxis</p>
+          </div>
+          <div>
+            <a href="#" v-for="term in terms" class="text-white hover:text-[#FD04B1]">{{ term }}</a>
+            
+          </div>
+          <div>
+            <img src="/src/assets/images/xiots-logo.jpg" alt="logo" class="w-[120px]">
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -56,16 +69,62 @@
 
 const address = '297a London Road Hazel Grove, Stockport SK7 4PS Tel: <span class="font-semibold text-[#FD04B1]">0161 480 0000</span>'
 
+const terms = [
+  'Terms & Conditions | ',
+  'Privacy Policy | ',
+  'Cookie Policy | ',
+  'Refund Policy | ',
+  'Card Payment Pre-Authorisation'
+]
+
 const areas = [
   'Alderley Edge',
-  'Alderley Edge',
-  'Alderley Edge',
-  'Alderley Edge',
-  'Alderley Edge',
-  'Alderley Edge',
-  'Alderley Edge',
-  'Alderley Edge',
-  'Alderley Edge',
-  'Alderley Edge's
+  'Altrincham',
+  'Bollington',
+  'Bredbury',
+  'Cheadle hulme',
+  'Edgeley',
+  'Heaton Chapel',
+  'Heaton Mersey',
+  'Heaton Moor',
+  'Knutsford'
 ]
+
+const areas1 = [
+  'Levenshulme',
+  'Macclesfield',
+  'Marple',
+  'Parrs Wood',
+  'Reddish',
+  'Romiley',
+  'Stockport Train station',
+  'Stretford',
+  'Wilmslow',
+  'Wythenshawe'
+]
+
+const transfers = [
+  'Manchester Airport',
+  'Birmingham Airport',
+  'Liverpool Airport'
+]
+
+const blogs = [
+  'Taxi to Manchester Airport',
+  'Taxi to Birmingham Airport',
+  'Taxi to Liverpool Airport'
+]
+
+const abouts = [
+  'About Us',
+  'Lynx Eco',
+  'Blogs'
+]
+
+const contacts = [
+  'Contact Us',
+  'BUsiness Accounts',
+  'School Run'
+]
+
 </script>

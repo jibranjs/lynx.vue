@@ -2,7 +2,7 @@
     <section class="bg-[#FFEEFD]">
         <div class="max-w-[1536px] mx-auto py-12 lg:py-[75px]">
             <h2 class="text-center font-bold text-3xl">{{ mainHeading }}</h2>
-            <p class="text-center w-1/2 mx-auto mt-2 mb-6">{{ paragraph }}</p>
+            <p class="text-center w-1/2 mx-auto text-lg mt-2 mb-6">{{ paragraph }}</p>
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 ">
                 <div v-for="cartype in cartypes" class="bg-white hover:bg-[#FD04B1] hover:text-white hover:shadow-2xl mt-4 py-6 px-4 rounded-[20px] border border-[#FD04B1]">
                     <h2 class="text-2xl text-center font-bold">{{ cartype.title }}</h2>

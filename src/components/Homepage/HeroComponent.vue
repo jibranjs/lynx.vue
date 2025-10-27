@@ -5,7 +5,7 @@
                 <div>
                     <h2 class="text-xl lg:text-2xl font-semibold pb-2">{{ subHeading }}</h2>
                     <h1 class="text-xl lg:text-3xl pb-4 font-bold text-[#FD04B1] w-full lg:w-[650px]">{{ mainHeading }}</h1>
-                    <p class="pb-4 lg:w-[650px]">{{ heroPara }}</p>
+                    <p class="pb-4 lg:w-[650px] text-lg">{{ heroPara }}</p>
                     <div class="flex gap-4 mb-8">
                         <button class="bg-[#FD04B1] text-white py-2 px-3 rounded">
                             BOOK ONLINE
@@ -13,6 +13,7 @@
                         <button class="border border-[#FD04B1] py-2 px-3 text-[#FD04B1]">
                             CALL {{ Phone }}
                         </button>
+                        <Button> Hello</Button>
                     </div>
                     <ul class="mb-8">
                         <li v-for="list in lists" class="flex gap-3 mb-2">
@@ -59,6 +60,8 @@
         </div>
     </section>
 </template>
+
+
 
 <script setup>
 import { Icon } from "@iconify/vue";

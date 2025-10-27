@@ -9,8 +9,15 @@
                     <BasicHeading size="xl">Download Our App</BasicHeading>
                     <p class="text-lg mt-4">{{ para }}</p>
                     <ul class="mt-4">
-                        <li v-for="list in lists" class="mb-3 hover:underline flex gap-2 items-center text-lg"><Icon icon="lets-icons:check-fill" width="24" height="24"  style="color: #FD04B1"></Icon>{{ list }}</li>
+                        <li v-for="list in lists" class="mb-3 hover:underline flex gap-2 items-center text-lg">
+                            <Icon icon="lets-icons:check-fill" width="24" height="24" style="color: #FD04B1"></Icon>{{
+                            list }}
+                        </li>
                     </ul>
+                    <div class="flex gap-8 mt-8">
+                        <a href="#"><img src="/src/assets/images/app-store.jpg" alt="app-store"></a>
+                        <a href="#"><img src="/src/assets/images/google-play.jpg" alt="play-store"></a>
+                    </div>
                 </div>
             </div>
         </div>
