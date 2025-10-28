@@ -1,82 +1,65 @@
 <template>
-    <section class="bg-[#FFEEFD]">
-        <div class="max-w-[1536px] mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-6 lg:gap-12 items-center justify-center">
-                <div>
-                    <h2 class="text-xl lg:text-2xl font-semibold pb-2">{{ subHeading }}</h2>
-                    <h1 class="text-xl lg:text-3xl pb-4 font-bold text-[#FD04B1] w-full lg:w-[650px]">{{ mainHeading }}</h1>
-                    <p class="pb-4 lg:w-[650px] text-lg">{{ heroPara }}</p>
-                    <div class="flex gap-4 mb-8">
-                        <button class="bg-[#FD04B1] text-white py-2 px-3 rounded">
-                            BOOK ONLINE
-                        </button>
-                        <button class="border border-[#FD04B1] py-2 px-3 text-[#FD04B1]">
-                            CALL {{ Phone }}
-                        </button>
-                        <Button> Hello</Button>
-                    </div>
-                    <ul class="mb-8">
-                        <li v-for="list in lists" class="flex gap-3 mb-2">
-                            <Icon icon="material-symbols:check-box-rounded" width="24" height="24"></Icon>{{ list }}
-                        </li>
-                    </ul>
-
-                    <!-- Google play -->
-                   <div class="flex gap-4 my-4">
-                     <div class="flex items-center gap-3 bg-white py-2 px-3 shadow-lg">
-                        <img src="/src/assets/images/google.png" alt="google" class="w-[56px]" />
-                        <div>
-                            <h2>Google Play</h2>
-                            <div class="flex">
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- appstor -->
-                      <div class="flex items-center gap-3 bg-white px-3 py-2 shadow-lg">
-                        <img src="/src/assets/images/app.png" alt="appstore" class="w-[46px]"/>
-                        <div>
-                            <h2>App Store</h2>
-                            <div class="flex">
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                                <Icon icon="ic:round-star" width="24" height="24" class="text-[#E5712A]"></Icon>
-                            </div>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-                <div>
-                    <img src="/src/assets/images/hero.jpg" alt="heroimage" class="h-[800px]">
-                </div>
+    <section>
+        <div class="max-w-[1536px] mx-auto py-[75px]">
+            <h2 class="text-[#EB6F25] font-semibold text-center mb-3">EXPLORE THE AWESOME</h2>
+            <h1 class="text-4xl font-bold text-center mb-5">Various Products</h1>
+            <div class="flex gap-20 justify-center items-center">
+                <a href="#" class="hover:text-[#EB6F25]">New Products</a>
+                <a href="#" class="hover:text-[#EB6F25]">Best Selling</a>
+                <a href="#"  class="hover:text-[#EB6F25]">Accessories</a>
             </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 py-[45px]">
+                <div v-for="product in products" class="text-center bg-[#ccc] px-5 pb-8 rounded-lg">
+                    <img :src='product.image' alt="product">
+                    <h2 class="text-xl font-semibold text-center">{{product.title}}</h2>       
+                    <p class="text-center text-lg w-[350px] mb-4 mx-auto">{{ product.description }}</p>            
+                    <p class="text-lg font-semibold ml-3 text-center">{{product.price}}</p>
+                    <p class="bg-[#50A151] mx-auto text-center mt-2 w-[200px] text-white px-6 rounded-full">In Stock</p>
+                    <button class="text-white bg-black w-[200px] mx-auto hover:shadow-xl text-center px-6 py-2 rounded-full mt-4">Add To Cart</button>
+                </div>             
+             </div>
+
         </div>
     </section>
 </template>
-
-
-
 <script setup>
-import { Icon } from "@iconify/vue";
+const products = [
+    {
+        image: "/src/assets/images/transparent.png",
+        title: "Product Name",
+        description:" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,",
+        price : '10$'
+    },
+    {
+        image: "/src/assets/images/transparent.png",
+        title: "Product Name",
+        description:" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,",
+        price : '10$'
+    },
+    {
+        image: "/src/assets/images/transparent.png",
+        title: "Product Name",
+        description:" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,",
+        price : '10$'
+    },
+    {
+        image: "/src/assets/images/transparent.png",
+        title: "Product Name",
+        description:" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,",
+        price : '10$'
+    },
+    {
+        image: "/src/assets/images/transparent.png",
+        title: "Product Name",
+        description:" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,",
+        price : '10$'
+    },
+    {
+        image: "/src/assets/images/transparent.png",
+        title: "Product Name",
+        description:" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,",
+        price : '10$'
+    }
+]
 
-// Text
-const subHeading = "Lynx Taxis - Stockport taxi service";
-const mainHeading = "Local taxi and airport transfer specialists since 1988";
-const heroPara =
-    "Specializing in airport transfers and local journeys with fixed competitive rates. Convenient Online Booking, Mobile App, WhatsApp Booking, Phone Reservations, and 24/7 Customer Support.";
-const Phone = "0161 480 0000";
-
-// Arrays
-const lists = [
-    "Fixed Fare gurunteed",
-    "24/7 Stockport taxi service",
-    "Manchester Airport specialists",
-];
 </script>
