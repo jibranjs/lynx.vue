@@ -4,7 +4,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-6 lg:gap-12 items-center justify-center">
                 <div>
                     <h2 class="text-xl lg:text-2xl font-semibold pb-2">{{ subHeading }}</h2>
-                    <h1 class="text-xl lg:text-3xl pb-4 font-bold text-[#FD04B1] w-full lg:w-[650px]">{{ mainHeading }}</h1>
+                    <h1 class="text-xl lg:text-4xl pb-4 font-bold text-[#FD04B1] w-full lg:w-[650px]">{{ mainHeading }}</h1>
                     <p class="pb-4 lg:w-[650px] text-lg">{{ heroPara }}</p>
                     <div class="flex gap-4 mb-8">
                         <button class="bg-[#FD04B1] text-white py-2 px-3 rounded">
@@ -13,7 +13,6 @@
                         <button class="border border-[#FD04B1] py-2 px-3 text-[#FD04B1]">
                             CALL {{ Phone }}
                         </button>
-                        <Button> Hello</Button>
                     </div>
                     <ul class="mb-8">
                         <li v-for="list in lists" class="flex gap-3 mb-2">
@@ -80,3 +79,18 @@ const lists = [
     "Manchester Airport specialists",
 ];
 </script>
+
+
+<style scoped>
+:deep(.p-accordionpanel){
+    border:  1px solid pink !important;
+}
+:deep(.p-accordionheader){
+    border: 1px solid pink !important;
+    background-color: white;
+    padding: 20px !important;
+}
+:deep(.p-accordioncontent-content){
+    border: none !important;
+}
+</style>

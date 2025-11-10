@@ -1,5 +1,4 @@
 <template>
-
   <HeroComponent />
 
   <TrustedComponent />
@@ -18,7 +17,10 @@
 
   <JoinLynxComponent />
 
+  <HappyCustomerComponent />
+
 <LicenceComponent />
+
 </template>
 
 <script setup>
@@ -32,4 +34,5 @@ import LicenceComponent from '../components/Homepage/LicenceComponent.vue';
 import JoinLynxComponent from '../components/Homepage/JoinLynxComponent.vue';
 import DownloadappComponent from '../components/Homepage/DownloadappComponent.vue'
 import AreacoverComponent from '../components/Homepage/AreacoverComponent.vue'
+import HappyCustomerComponent from '../components/Homepage/HappyCustomerComponent.vue';
 </script>
