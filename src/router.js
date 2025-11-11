@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from './views/HomeView.vue'
-import FetchCategories from './components/Homepage/FetchCategories.vue'
+import SingleCategory from './components/Homepage/SingleCategory.vue'
 
 const routes = [
   {
@@ -9,9 +9,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/categories',
-    name: 'categories',
-    component: FetchCategories
+    path: '/category',
+    name: 'category',
+    component: SingleCategory
   }
 ]
 
